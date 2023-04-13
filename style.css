@@ -1,0 +1,172 @@
+ /* set a font family and size for the entire page */
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    background: url(background2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+h1 {
+    color: #000;
+    border-bottom: 2px solid #d1a347;
+    padding-bottom: 5px;
+}
+
+.wrapper {
+    width: 1000px;
+    margin: 80px auto;
+    padding: 50px;
+    box-shadow: rgb(72, 78, 81) 0px 5px 8px 0px;
+    background-color: rgb(43, 38, 3);
+    background-image: url(https://media.dndbeyond.com/compendium-images/tcoe/0gqawlEa2tjXGxpc/mm_statbg_sm.jpg) !important;
+    position: relative;
+    box-shadow: 3px 3px 13px 7px #343434;
+}
+
+.wrapper::before {
+    content: '';
+    background-image: url(https://media.dndbeyond.com/compendium-images/cm/c43LH2y2Gcaxb3V2/MMStatBar_lrg.png);
+    background-size: 100% 100%;
+    background-position: center;
+    height: 4px;
+    display: inline-block;
+    position: absolute;
+    left: -3px;
+    top: -3px;
+    right: -3px;
+}
+
+.wrapper::after {
+    content: '';
+    background-image: url(https://media.dndbeyond.com/compendium-images/cm/c43LH2y2Gcaxb3V2/MMStatBar_lrg.png);
+    background-size: 100% 100%;
+    background-position: center;
+    height: 4px;
+    display: inline-block;
+    position: absolute;
+    left: -3px;
+    bottom: -3px;
+    right: -3px;
+}
+
+/* add a background color and center the content on the page */
+.container {
+    background-color: #f7f7f7;
+    height: 80vh;
+}
+
+/* add a white background color and some padding to the combat tracker box */
+.combat-tracker {
+    background-color: #fff;
+    padding: 24px;
+    border-radius: 16px;
+    box-shadow: 3px 3px 20px 11px #1c1c1c;
+}
+
+/* style the title and subtitle */
+.title {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.subtitle {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 24px;
+}
+
+h3 {
+    text-align: center;
+    color: #bc0f0f;
+    margin-top: 50px;
+}
+
+/* style the form elements */
+form {
+    /* border-top: 2px solid #bc0f0f; */
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin: 30px auto;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 16px;
+}
+
+input[type="submit"] {
+    background-color: #ff5a5f;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+    
+label {
+    font: inherit;
+    margin-bottom: 5px;
+}
+
+/* style the combat history table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 24px;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+font-weight: 700;
+}
+
+/* add some spacing to the top and bottom of the page */
+header,
+footer {
+    padding: 24px;
+    text-align: center;
+    background-color: #f7f7f7;
+}
+
+footer p {
+margin: 0;
+}
+
+button {
+    background-color: #47d18c;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 14px 24px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: #70dba6;
+}
+
+#sort-initiative:hover {
+    cursor: pointer;
+}
